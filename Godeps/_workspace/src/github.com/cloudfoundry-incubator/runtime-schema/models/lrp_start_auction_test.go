@@ -46,8 +46,9 @@ var _ = Describe("LRPStartAuction", func() {
     },
     "instance_guid": "some-instance-guid",
     "index": 2,
-    "state": 1,
-    "updated_at": 1138
+    "num_azs":4,
+    "updated_at": 1138,
+    "state": 1
   }`
 
 	BeforeEach(func() {
@@ -81,6 +82,7 @@ var _ = Describe("LRPStartAuction", func() {
 				},
 			},
 
+			NumAZs:    4,
 			State:     LRPStartAuctionStatePending,
 			UpdatedAt: 1138,
 		}

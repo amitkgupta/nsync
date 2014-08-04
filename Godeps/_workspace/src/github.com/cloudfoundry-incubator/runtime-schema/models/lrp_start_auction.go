@@ -16,6 +16,8 @@ type LRPStartAuction struct {
 	InstanceGuid string `json:"instance_guid"`
 	Index        int    `json:"index"`
 
+	NumAZs int `json:"num_azs"`
+
 	State     LRPStartAuctionState `json:"state"`
 	UpdatedAt int64                `json:"updated_at"`
 }
